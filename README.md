@@ -8,6 +8,8 @@ This is intended for servers which do not already have a slf4j. Simply install t
 
 **Paper 1.12.2+ servers already have a slf4j binding,** so slf-4-mc should NOT be installed on these servers.
 
+**Waterfall proxies already have a slf4j binding,** so slf-4-mc should NOT be installed on these proxy servers.
+
 ## Information for Developers
 
 The slf4j binding is based on version *1.7.25* of slf4j. To ensure compatibility, one should build against this version. The slf4j is implemented in whole; note that it is marker agnostic. However, MDC *is* supported.
