@@ -12,7 +12,7 @@ This is intended for servers which do not already have a slf4j. Simply install t
 
 ## Information for Developers
 
-This is a very simple plugin which could be made in a matter of minutes. It merely shades slf4j-api and slf4j-jdk14. Additionally, users who already have slf4j will be instructed to uninstall slf-4-mc. Such mishaps are detected via Paper's JavaPlugin#getSLF4JLogger or Waterfall's Plugin#getSLF4JLogger.
+This is a very simple plugin which could be made in a matter of minutes. It merely shades slf4j-api and slf4j-jdk14. Additionally, users who already have slf4j will be instructed to uninstall slf-4-mc. Such mishaps are detected via [Paper's JavaPlugin#getSLF4JLogger](https://github.com/PaperMC/Paper/blob/master/Spigot-API-Patches/0066-Allow-plugins-to-use-SLF4J-for-logging.patch) or [Waterfall's Plugin#getSLF4JLogger](https://github.com/PaperMC/Waterfall/blob/master/BungeeCord-Patches/0038-Allow-plugins-to-use-SLF4J-for-logging.patch).
 
 ## Notes
 
