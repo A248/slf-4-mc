@@ -16,6 +16,6 @@ This is a very simple plugin which could be made in a matter of minutes. It mere
 
 ## Notes
 
-slf-4-mc is made as a backstop for servers which do not have slf4j, including servers using legacy versions as old as 1.7.10. Although individual Minecraft servers use log4j2 internally, this usage is not exposed to plugins and is not available on Bungee. Further, it is possible that these log4j2 internals may change. Accordingly, it is insufficient to instead shade the log4j2 implementation of slf4j, log4j-slf4j-impl, to support all versions.
+slf-4-mc is made as a backstop for servers which do not have slf4j, including servers using legacy versions as old as 1.7.10. Although individual Minecraft servers use log4j2 internally, this usage is not exposed to plugins and is not available on Bungee. Further, the log4j2 version is constantly changing. Accordingly, it is insufficient to instead shade the log4j2 implementation of slf4j, log4j-slf4j-impl, to support all versions.
 
 For these reasons, slf4mc ties to JUL, which is common to Spigot and Bungee.
