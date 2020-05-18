@@ -1,0 +1,4 @@
+main: space.arim.slf4mc.Slf4Bungee
+name: Slf4MC
+author: A248
+version: ${project.version}
