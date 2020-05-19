@@ -33,7 +33,10 @@ public class Slf4Bungee extends Plugin {
 			logger.error("Uninstall Slf4MC because your server already has slf4j!");
 			logger.error("----------------------------------------------------------------");
 		} catch (NoSuchMethodError expected) {
-			LoggerFactory.getLogger(Slf4Spigot.class).info("Hello from slf4j!");
+			Logger logger = LoggerFactory.getLogger(Slf4Spigot.class);
+			logger.info("Hello from slf4j!");
+			logger.info("If you see something like \"Loaded class X from Plugin Y which is not a depend, softdepend or loadbefore of this plugin.\","
+					+ "then you do not need Slf4MC because Plugin Y already provides it. (If you uninstall Plugin Y, you will need Slf4MC again)");
 		}
 	}
 
