@@ -30,7 +30,7 @@ public class Slf4Bungee extends Plugin {
 		try {
 			Logger logger = getSLF4JLogger();
 			logger.error("----------------------------------------------------------------");
-			logger.error("Uninstall Slf4MC because your server already has slf4j!");
+			logger.error("Uninstall Slf4MC because your server already has slf4j! (Waterfall has it built-in)");
 			logger.error("----------------------------------------------------------------");
 		} catch (NoSuchMethodError expected) {
 			Logger logger = LoggerFactory.getLogger(Slf4Spigot.class);

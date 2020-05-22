@@ -30,7 +30,7 @@ public class Slf4Spigot extends JavaPlugin {
 		try {
 			Logger logger = getSLF4JLogger();
 			logger.error("----------------------------------------------------------------");
-			logger.error("Uninstall Slf4MC because your server already has slf4j!");
+			logger.error("Uninstall Slf4MC because your server already has slf4j! (Paper has it built-in)");
 			logger.error("----------------------------------------------------------------");
 		} catch (NoSuchMethodError expected) {
 			Logger logger = LoggerFactory.getLogger(Slf4Spigot.class);
